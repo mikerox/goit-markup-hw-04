@@ -165,6 +165,7 @@ ul {
 .contact-menu:focus {
   color: var(--IRIS, #4d5ae5);
 }
+
 /*Contact styling*/
 
 .contacts a {
@@ -217,6 +218,7 @@ ul {
   align-items: flex-start;
   gap: 8px;
 }
+
 /*Service section*/
 
 .services-section {
@@ -241,18 +243,27 @@ ul {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.5; /* 150% */
+  line-height: 1.5;
+  /* 150% */
   letter-spacing: 0.32px;
 }
+
 .service-des {
   display: flex;
   width: 264px;
   flex-direction: column;
   align-items: flex-start;
 }
+
 /*End of Service Section*/
 
 /*What Are We Doing(wawd)*/
+
+.our-work-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .section-wawd {
   color: var(--NAVY-BLUE, #2e2f42);
   text-align: center;
@@ -278,6 +289,7 @@ ul {
 .device-images {
   display: inline-block;
 }
+
 /*WAWD ending*/
 
 .header-team {
@@ -323,7 +335,11 @@ ul {
   padding: 104px;
 }
 
-.service-item h3 {
+.service-title {
+  padding-top: 8px;
+}
+
+.service-item {
   color: #2e2f42;
   font-size: 20px;
   font-style: normal;
@@ -363,19 +379,31 @@ ul {
 }
 
 .footer-bg-dark {
-  background-color: #2e2f42;
+  background-color: var(--NAVY-BLUE);
+  color: var(--CLOUD);
+  padding-top: 156px;
+  padding-bottom: 156px;
+  padding-left: 10%;
+  display: flex;
   width: 1440px;
-  height: 312px;
+  /* height: 312px; */
 }
 
-.footer {
+.footer-div {
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center;
   padding-left: 156px;
-  padding-top: 140px;
+  padding-top: 140px; */
+  /* background-color: var(--NAVY-BLUE);
+  color: var(--CLOUD);
+  padding-top: 156px;
+  padding-bottom: 156px;
+  padding-left: 10%;
+  display: flex; */
+  /* align-content: baseline; */
 }
 
-footer .logo-link {
+.footer .logo-link {
   color: var(--CLOUD, #f4f4fd);
   font-family: "Raleway";
   font-size: 18px;
@@ -394,7 +422,7 @@ footer .logo-link {
 }
 
 .footer-text {
-  padding-left: 156px;
+  padding-left: 0;
   padding-bottom: 100px;
 }
 
@@ -456,6 +484,7 @@ footer .logo-link {
   background: var(--OCEAN, #404bbf);
   color: var(--WHITE, #ffffff);
 }
+
 /*Portfolio button end*/
 
 .project-item {
@@ -535,23 +564,30 @@ footer .logo-link {
 .dili,
 .tech {
   display: inline-flex;
+  justify-content: center;
   width: 264px;
-  flex-direction: column;
-  align-items: flex-start;
   text-align: justify;
   gap: 8px;
   border-radius: 4px;
   background: var(--CLOUD, #f4f4fd);
+  justify-content: center;
+  padding: 24px 100px;
 }
 
 .team-socials {
   display: flex;
   justify-content: space-around;
+  padding-top: 8px;
 }
 
-.icon-bg {
-  fill: var(--IRIS, #4d5ae5);
+.team-icons {
+  fill: var(--CLOUD, #f4f4fd);
   display: inline-block;
+  background-color: #4d5ae5;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 12px;
 }
 
 .team-item {
@@ -574,4 +610,99 @@ footer .logo-link {
 
 .team-text {
   padding-bottom: 8px;
+}
+
+/*Customers Section*/
+
+.customer {
+  width: 1440px;
+  background: var(--WHITE, #fff);
+  padding-top: 120px;
+  padding-bottom: 120px;
+  text-align: center;
+  justify-content: center;
+
+}
+
+.customers-title {
+  color: var(--NAVY-BLUE, #2e2f42);
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  /* 111.111% */
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  padding-bottom: 72px;
+}
+
+.client-logo {
+  display: flex;
+  width: 168px;
+  height: 88px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+  align-items: center;
+
+}
+
+
+.client-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+/*Social-Media-Footer*/
+.social-header {
+  padding-left: 269px;
+  display: flex;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+
+.social-icon-footer {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding-left: 269px;
+  padding-top: 16px;
+}
+
+.footer-icons {
+  fill: var(--CLOUD, #f4f4fd);
+  display: inline-block;
+  background-color: #4d5ae5;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+/*Portfolio-Footer*/
+
+.p-social-header {
+  padding-left: 269px;
+  display: flex;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+
+.p-icon-footer {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding-left: 269px;
+  padding-top: 16px;
 }
