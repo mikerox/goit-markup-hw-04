@@ -141,6 +141,18 @@ ul {
   /* height: 600px; */
 }
 
+.hero {
+  background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url("/images/people-hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 188px;
+  padding-bottom: 188px;
+  text-align: center;
+  width: 1440px;
+}
+
+
 /**hero section end**/
 
 /*hover effects*/
@@ -186,18 +198,17 @@ ul {
 
 .btn {
   padding: 16px 32px;
-  align-items: flex-start;
+  margin-top: 48px;
   border-radius: 4px;
-  background-color: var(--IRIS, #4d5ae5);
   color: var(--WHITE);
+  background-color: var(--IRIS, #4d5ae5);
   border-style: none;
   box-shadow: 0px 4px 4px 0px #00000026;
 }
 
 .btn:hover {
-  /* background: #d4f542; */
-  /* color: var(--WHITE, #FFFFFF); */
-  opacity: 0.6;
+  background: #f5bd06f6;
+  color: var(--NAVY-BLUE, #2e2f42);
   cursor: pointer;
 }
 
